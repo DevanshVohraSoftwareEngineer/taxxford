@@ -687,6 +687,7 @@ export default function Home() {
           <div className="footer-bottom-bar">
             <span>© 2026 Taxxford. All rights reserved.</span>
             <div className="bottom-links">
+              <Link href="/about">About Us</Link>
               <a href="#consult">Privacy Policy</a>
               <a href="#consult">Terms of Service</a>
               <a href="#consult">Cookies Settings</a>
