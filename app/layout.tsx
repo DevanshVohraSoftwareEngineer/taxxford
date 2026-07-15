@@ -104,6 +104,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BASE_URL,
   },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   category: "Legal & Financial Services",
 };
 
