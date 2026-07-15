@@ -105,9 +105,12 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/icon.png",
+    apple: "/apple-touch-icon.png",
   },
   category: "Legal & Financial Services",
 };
