@@ -6,12 +6,20 @@ const BASE_URL = "https://taxxford.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Taxxford | Chartered Accountant, Legal & Compliance Services India",
+    default: "Taxxford | Chartered Accountant & Legal Services in Delhi",
     template: "%s | Taxxford",
   },
   description:
-    "Taxxford provides expert Chartered Accountant, Company Secretary, and legal services — Income Tax Return filing, GST, startup registration, MCA compliance, FEMA, and more. Trusted by founders across India.",
+    "Taxxford provides top-rated Chartered Accountant (CA), Company Secretary (CS), and legal compliance services in Delhi & NCR. Expert tax filing, GST, and startup registrations.",
   keywords: [
+    "chartered accountant in delhi",
+    "best CA in delhi",
+    "legal services in delhi",
+    "company secretary in delhi",
+    "income tax return filing delhi",
+    "startup registration delhi",
+    "GST registration delhi",
+    "CA firm delhi NCR",
     "chartered accountant",
     "CA services India",
     "company secretary",
@@ -73,9 +81,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: BASE_URL,
     siteName: "Taxxford",
-    title: "Taxxford | Chartered Accountant, Legal & Compliance Services India",
+    title: "Taxxford | Chartered Accountant & Legal Services in Delhi",
     description:
-      "Expert CA, Company Secretary & legal services — ITR, GST, startup registration, MCA, FEMA compliance. Trusted by Indian founders and businesses.",
+      "Expert Chartered Accountant, CS & legal compliance services in Delhi & NCR. Trusted by founders and businesses across India.",
     images: [
       {
         url: "/logo.png",
@@ -87,9 +95,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxxford | Chartered Accountant, Legal & Compliance Services",
+    title: "Taxxford | Chartered Accountant & Legal Services in Delhi",
     description:
-      "Expert CA, CS & legal services — ITR filing, GST, startup registration, MCA compliance and more.",
+      "Top CA, CS & legal services in Delhi NCR. Get expert assistance with ITR filing, GST, and startup registration.",
     images: ["/logo.png"],
     creator: "@taxxford",
   },
@@ -116,7 +124,7 @@ export default function RootLayout({
               "@type": ["LocalBusiness", "ProfessionalService"],
               name: "Taxxford",
               description:
-                "Taxxford provides Chartered Accountant, Company Secretary, and legal services including Income Tax Return filing, GST, startup registration, MCA compliance, and FEMA advisory.",
+                "Taxxford provides professional Chartered Accountant, Company Secretary, and legal services in Delhi NCR, including ITR filing, GST, startup registration, and MCA compliance.",
               url: BASE_URL,
               logo: `${BASE_URL}/logo.png`,
               image: `${BASE_URL}/logo.png`,
@@ -124,6 +132,8 @@ export default function RootLayout({
               email: "taxxford@gmail.com",
               address: {
                 "@type": "PostalAddress",
+                addressLocality: "Delhi",
+                addressRegion: "Delhi",
                 addressCountry: "IN",
               },
               sameAs: [`https://wa.me/919267906751`],
@@ -137,10 +147,16 @@ export default function RootLayout({
                 "MCA Compliance",
                 "FEMA Compliance",
               ],
-              areaServed: {
-                "@type": "Country",
-                name: "India",
-              },
+              areaServed: [
+                {
+                  "@type": "AdministrativeArea",
+                  name: "Delhi NCR",
+                },
+                {
+                  "@type": "Country",
+                  name: "India",
+                },
+              ],
               priceRange: "$$",
             }),
           }}
